@@ -1,0 +1,193 @@
+/* =======================
+   GLOBAL RESET
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =======================
+   HEADER / NAVBAR
+======================= */
+.header {
+  width: 100%;
+  background-color: rgb(25, 51, 59);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.header ul li {
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 16px;
+}
+
+/* =======================
+   HERO / FOODI SECTION
+======================= */
+.foodi {
+  min-height: 600px;
+  width: 100%;
+  background: url(mymeal/fb.avif) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.overlay-text {
+  max-width: 500px;
+  color: white;
+}
+
+.overlay-text h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.overlay-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* =======================
+   ABOUT SECTION
+======================= */
+.about {
+  width: 100%;
+  padding: 60px 30px;
+}
+
+/* =======================
+   OPTIONS / CARDS
+======================= */
+.options {
+  width: 100%;
+  padding: 60px 30px;
+  background-color: rgb(25, 51, 59);
+  display: flex;
+  justify-content: center;
+}
+
+.dcard-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dcard {
+  width: 250px;
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  padding-bottom: 15px;
+}
+
+.dcard:hover {
+  transform: translateY(-6px);
+}
+
+.dcard img {
+  width: 100%;
+}
+
+/* =======================
+   CONTACT & FOOTER
+======================= */
+.contact {
+  width: 100%;
+  padding: 60px 30px;
+  background-color: rosybrown;
+}
+
+.footer {
+  width: 100%;
+  padding: 40px 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* =======================
+   HEADINGS
+======================= */
+h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+h3, h4 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* =======================
+   MOBILE RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .foodi {
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .overlay-text h1 {
+    font-size: 26px;
+  }
+
+  .overlay-text p {
+    font-size: 14px;
+  }
+
+  .options {
+    padding: 40px 20px;
+  }
+
+  .dcard-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

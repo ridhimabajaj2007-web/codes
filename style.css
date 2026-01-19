@@ -1,0 +1,104 @@
+* {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* CENTER PAGE */
+.center-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* SIGN IN */
+.loginbox {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.auth-box h2 {
+  color: #fc8019;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #fc8019;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* COMMON */
+.page-title {
+  padding: 20px;
+  text-align: center;
+}
+
+/* CART */
+.cart {
+  width: 300px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.checkout {
+  width: 100%;
+  padding: 10px;
+  background: #fc8019;
+  border: none;
+  color: white;
+}
+
+/* OFFERS */
+.offers {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.offer-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+}
+
+/* SEARCH */
+.search-page {
+  width: 300px;
+  margin: auto;
+}
+
+.search-page input {
+  width: 100%;
+  padding: 10px;
+}
+
+.search-result p {
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+}
